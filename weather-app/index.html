@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приложение Погоды</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather-app">
+        <h1>Прогноз Погоды</h1>
+        <input type="text" id="cityInput" placeholder="Введите название города" />
+        <button id="getWeatherBtn">Узнать погоду</button>
+        <button id="getForecastBtn">Прогноз на 5 дней</button>
+
+        <div id="loader" style="display: none;">Загрузка...</div>
+
+        <div class="current-weather">
+            <div id="weatherResult">
+                <h2 id="cityName"></h2>
+                <p id="temperature"></p>
+                <p id="description"></p>
+            </div>
+
+            <div id="fiveDayForecast">
+                <h3>Прогноз на 5 дней:</h3>
+                <div id="forecast"></div>
+            </div>
+        </div>
+
+        <div id="savedCities">
+            <h3>Последние введённые города:</h3>
+            <ul id="citiesList"></ul>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

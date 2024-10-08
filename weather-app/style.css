@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a58b8b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.weather-app {
+    background-color: rgb(155, 121, 121);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 600px; /* Увеличиваем ширину для размещения двух блоков */
+}
+
+input, button {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #aa9999;
+    border-radius: 5px;
+}
+
+.current-weather {
+    display: flex; /* Используем Flexbox для выстраивания элементов в строку */
+    justify-content: space-between; /* Распределяем пространство между элементами */
+    align-items: flex-start; /* Выравниваем элементы по верхнему краю */
+    margin-top: 20px; /* Отступ сверху для разделения с кнопками */
+}
+
+#fiveDayForecast {
+    margin-left: 20px; /* Отступ для прогноза на 5 дней */
+    text-align: left; /* Выравнивание текста по левому краю */
+}
+
+#forecast {
+    margin-top: 10px; /* Отступ сверху для списка прогнозов */
+}
+
+#savedCities {
+    margin-top: 20px; /* Отступ сверху для списка последних городов */
+}
